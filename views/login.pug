@@ -1,0 +1,23 @@
+h1 Banco Santander - ETSISI
+h3 Area Clientes
+form(method='POST', action='/client/login')
+  label(for='email') Email:
+  br
+  input#email.form-control(type='email', placeholder='nombre@email.com', name='email')
+  br
+  label(for='email') Contrase&ntilde;a:
+  br
+  input#pw.form-control(type='password', name='password')
+  button(type='submit') Entrar en tu perfil
+
+h3 Area Empleados
+form(method='POST', action='/employee/login')
+  label(for='email') Email:
+  br
+  input#email.form-control(type='email', placeholder='nombre@email.com', name='email')
+  br
+  label(for='email') Contrase&ntilde;a:
+  br
+  input#pw.form-control(type='password', name='password')
+  button(type='submit') Entrar en el area de empleados
+

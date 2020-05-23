@@ -5,15 +5,15 @@ var router = express.Router();
 var redirectHome = sessionHandler.redirectHome;
 
 router.get('/', redirectHome, function(req, res) {
-  res.send('Welcome to SSRbank');
+  res.render('index')
 });
 
-router.get('/login', redirectHome, function(req, res) {
-  res.send('This is the login page for both clients and users')
+router.get('/login', redirectHome, function(req, res) {  
+  res.render('login')
 });
 
 router.get('/signup', redirectHome, function(req, res) {
-  res.send('This is the signup page for both clients and users')
+  res.render('signup')
 });
 
 router.get('/logout', sessionHandler.logout);

@@ -117,5 +117,5 @@ exports.updateClient = function(req, res) {
 }
 
 exports.dashboard = function(req, res) {
-    res.send(req.app.locals.user)
+    res.render('dashboard', { user: req.app.locals.user });
 }

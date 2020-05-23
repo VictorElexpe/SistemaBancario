@@ -1,0 +1,20 @@
+h1 Banco Santander - ETSISI
+h3.display-4.m-b-2 Nuevo empleado
+form(method='POST', action='/employee/signup')
+  .form-group
+  label(for='email') Email:
+  input#email.form-control(type='email', placeholder='nombre@email.com', name='email')
+  br
+  .form-group
+  label(for='password') Contrase&ntilde;a:
+  input#pw.form-control(type='password', name='password')
+  br
+  .form-group
+  label(for='firstName') Nombre:
+  input#pw.form-control(type='firstName', name='firstName')
+  br
+  .form-group
+  label(for='lastName') Apellidos:
+  input#pw.form-control(type='lastName', name='lastName')
+  br
+  button.btn.btn-primary(type='submit') Dar de alta nuevo empleado
